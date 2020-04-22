@@ -5,9 +5,135 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Table</title>
 </head>
 <body>
-
+    <div class="table__block">
+        <table class="table">
+            <colgroup>
+                <col>
+                <col>
+                <col class="bg__blue">
+            </colgroup>
+            <caption class="title">Заголовок первой таблицы</caption>
+            <thead>
+            <tr>
+                <th>Заголовок первого столбца</th>
+                <th>Заголовок второго столбца</th>
+                <th>Заголовок третьего столбца</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td colspan="2"></td>
+                <td>Итог</td>
+            </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Первая ячейка</td>
+                    <td>Вторая ячейка</td>
+                    <td>Третья ячейка</td>
+                </tr>
+                <tr>
+                    <td>Четвертая ячека</td>
+                    <td>Пятая ячека</td>
+                    <td>Шестая ячека</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table__block">
+        <table class="table">
+            <caption class="title">Заголовок второй таблицы</caption>
+            <thead>
+                <th>Заголовок первого столбца</th>
+                <th>Заголовок второго столбца</th>
+                <th>Заголовок третьего стобца</th>
+                <th>Заголовок четвертого стобца</th>
+            </thead>
+            <tfoot>
+            <tr>
+                <td>Итоги</td>
+                <td colspan="2"></td>
+                <td>00.00</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr>
+                <td>1 ячейка</td>
+                <td>2 ячейка</td>
+                <td>3 ячейка</td>
+                <td>4 ячейка</td>
+            </tr>
+            <tr>
+                <td>5 ячейка</td>
+                <td>6 ячейка</td>
+                <td>7 ячейка</td>
+                <td>8 ячейка</td>
+            </tr>
+            <tr>
+                <td colspan="2">9 ячейка</td>
+                <td colspan="2">10 ячейка</td>
+            </tr>
+            <tr>
+                <td rowspan="2" >ADD строки</td>
+                <td>11 ячейка</td>
+                <td>12 ячейка</td>
+                <td>13 ячейка</td>
+            </tr>
+            <tr>
+                <td>14 ячейка</td>
+                <td>15 ячейка</td>
+                <td>16 ячейка</td>
+            </tr>
+            <tr>
+                <td>17 ячейка</td>
+                <td>18 ячейка</td>
+                <td>19 ячейка</td>
+                <td>20 ячейка</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="table__block border_none">
+        <span>Табличка на div на CSS: </span>
+    </div>
+    <div class="table__block">
+        <div class="table__css border">
+            <div class="table__caption">Заголовок таблицы на CSS</div>
+            <div class="table__thead">
+                <div class="table__tr border">
+                    <div class="table__td border">Заголовок первого столбца</div>
+                    <div class="table__td border">Заголовок второго столбца</div>
+                    <div class="table__td border">Заголовок третьего столбца</div>
+                    <div class="table__td border">Заголовок четвертого столбца</div>
+                </div>
+            </div>
+            <div class="table__tfoot">
+                <div class="table__tr border">
+                    <div class="table__td border">9 ячейка</div>
+                    <div class="table__td border">10 ячейка</div>
+                    <div class="table__td border">11 ячейка</div>
+                    <div class="table__td border">12 ячейка</div>
+                </div>
+            </div>
+            <div class="table__tbody">
+                <div class="table__tr border">
+                    <div class="table__td border">1 ячейка</div>
+                    <div class="table__td border">2 ячейка</div>
+                    <div class="table__td border">3 ячейка</div>
+                    <div class="table__td border">4 ячейка</div>
+                </div>
+                <div class="table__tr border">
+                    <div class="table__td border">5 ячейка</div>
+                    <div class="table__td border">6 ячейка</div>
+                    <div class="table__td border">7 ячейка</div>
+                    <div class="table__td border">8 ячейка</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
